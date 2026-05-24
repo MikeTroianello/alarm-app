@@ -1,0 +1,555 @@
+diff --git a/node_modules/rn-native-alarmkit/android/build/generated/source/buildConfig/debug/com/nativealarms/BuildConfig.java b/node_modules/rn-native-alarmkit/android/build/generated/source/buildConfig/debug/com/nativealarms/BuildConfig.java
+new file mode 100644
+index 0000000..9d75e02
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/generated/source/buildConfig/debug/com/nativealarms/BuildConfig.java
+@@ -0,0 +1,10 @@
++/**
++ * Automatically generated file. DO NOT MODIFY
++ */
++package com.nativealarms;
++
++public final class BuildConfig {
++  public static final boolean DEBUG = Boolean.parseBoolean("true");
++  public static final String LIBRARY_PACKAGE_NAME = "com.nativealarms";
++  public static final String BUILD_TYPE = "debug";
++}
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml b/node_modules/rn-native-alarmkit/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml
+new file mode 100644
+index 0000000..6691b67
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml
+@@ -0,0 +1,60 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.nativealarms" >
++
++    <uses-sdk android:minSdkVersion="24" />
++
++    <!-- Permissions -->
++    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
++    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
++    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
++    <uses-permission android:name="android.permission.WAKE_LOCK" />
++    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
++    <uses-permission android:name="android.permission.VIBRATE" />
++
++    <application>
++
++        <!-- Alarm Receiver - Handles alarm trigger events -->
++        <receiver
++            android:name="com.nativealarms.AlarmReceiver"
++            android:enabled="true"
++            android:exported="false" >
++            <intent-filter>
++                <action android:name="com.nativealarms.ALARM_ACTION" />
++            </intent-filter>
++        </receiver>
++
++        <!-- Alarm Action Receiver - Handles notification actions -->
++        <receiver
++            android:name="com.nativealarms.AlarmActionReceiver"
++            android:enabled="true"
++            android:exported="false" >
++            <intent-filter>
++                <action android:name="com.nativealarms.ACTION_DISMISS" />
++                <action android:name="com.nativealarms.ACTION_SNOOZE" />
++            </intent-filter>
++        </receiver>
++
++        <!-- Boot Receiver - Reschedules alarms after reboot -->
++        <receiver
++            android:name="com.nativealarms.BootReceiver"
++            android:enabled="true"
++            android:exported="true" >
++            <intent-filter>
++                <action android:name="android.intent.action.BOOT_COMPLETED" />
++                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
++            </intent-filter>
++        </receiver>
++
++        <!-- Permission Receiver - Listens for permission changes (Android 12+) -->
++        <receiver
++            android:name="com.nativealarms.PermissionReceiver"
++            android:enabled="true"
++            android:exported="false" >
++            <intent-filter>
++                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
++            </intent-filter>
++        </receiver>
++    </application>
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json b/node_modules/rn-native-alarmkit/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json
+new file mode 100644
+index 0000000..a45a411
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json
+@@ -0,0 +1,18 @@
++{
++  "version": 3,
++  "artifactType": {
++    "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
++    "kind": "Directory"
++  },
++  "applicationId": "com.nativealarms",
++  "variantName": "debug",
++  "elements": [
++    {
++      "type": "SINGLE",
++      "filters": [],
++      "attributes": [],
++      "outputFile": "AndroidManifest.xml"
++    }
++  ],
++  "elementType": "File"
++}
+\ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties b/node_modules/rn-native-alarmkit/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties
+new file mode 100644
+index 0000000..1211b1e
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties
+@@ -0,0 +1,6 @@
++aarFormatVersion=1.0
++aarMetadataVersion=1.0
++minCompileSdk=1
++minCompileSdkExtension=0
++minAndroidGradlePluginVersion=1.0.0
++coreLibraryDesugaringEnabled=false
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json b/node_modules/rn-native-alarmkit/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+new file mode 100644
+index 0000000..9e26dfe
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+@@ -0,0 +1 @@
++{}
+\ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar b/node_modules/rn-native-alarmkit/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar
+new file mode 100644
+index 0000000..8c3bd52
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt b/node_modules/rn-native-alarmkit/android/build/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties b/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+new file mode 100644
+index 0000000..0159df1
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+@@ -0,0 +1 @@
++#Sun May 24 16:39:46 EDT 2026
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml b/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+new file mode 100644
+index 0000000..99bf03d
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/build/generated/res/resValues/debug"/></dataSet><mergedItems/></merger>
+\ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt b/node_modules/rn-native-alarmkit/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+new file mode 100644
+index 0000000..78ac5b8
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+@@ -0,0 +1,2 @@
++R_DEF: Internal format may change without notice
++local
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt b/node_modules/rn-native-alarmkit/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt
+new file mode 100644
+index 0000000..94ca1e5
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt
+@@ -0,0 +1,105 @@
++1<?xml version="1.0" encoding="utf-8"?>
++2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++3    package="com.nativealarms" >
++4
++5    <uses-sdk android:minSdkVersion="24" />
++6
++7    <!-- Permissions -->
++8    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
++8-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:5:5-79
++8-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:5:22-76
++9    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
++9-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:6:5-74
++9-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:6:22-71
++10    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
++10-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:7:5-77
++10-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:7:22-74
++11    <uses-permission android:name="android.permission.WAKE_LOCK" />
++11-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:8:5-68
++11-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:8:22-65
++12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
++12-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:9:5-81
++12-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:9:22-78
++13    <uses-permission android:name="android.permission.VIBRATE" />
++13-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:10:5-66
++13-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:10:22-63
++14
++15    <application>
++15-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:12:5-54:19
++16
++17        <!-- Alarm Receiver - Handles alarm trigger events -->
++18        <receiver
++18-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:14:9-21:20
++19            android:name="com.nativealarms.AlarmReceiver"
++19-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:15:13-42
++20            android:enabled="true"
++20-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:16:13-35
++21            android:exported="false" >
++21-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:17:13-37
++22            <intent-filter>
++22-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:18:13-20:29
++23                <action android:name="com.nativealarms.ALARM_ACTION" />
++23-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:19:17-72
++23-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:19:25-69
++24            </intent-filter>
++25        </receiver>
++26
++27        <!-- Alarm Action Receiver - Handles notification actions -->
++28        <receiver
++28-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:24:9-32:20
++29            android:name="com.nativealarms.AlarmActionReceiver"
++29-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:25:13-48
++30            android:enabled="true"
++30-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:26:13-35
++31            android:exported="false" >
++31-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:27:13-37
++32            <intent-filter>
++32-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:28:13-31:29
++33                <action android:name="com.nativealarms.ACTION_DISMISS" />
++33-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:29:17-74
++33-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:29:25-71
++34                <action android:name="com.nativealarms.ACTION_SNOOZE" />
++34-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:30:17-73
++34-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:30:25-70
++35            </intent-filter>
++36        </receiver>
++37
++38        <!-- Boot Receiver - Reschedules alarms after reboot -->
++39        <receiver
++39-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:35:9-43:20
++40            android:name="com.nativealarms.BootReceiver"
++40-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:36:13-41
++41            android:enabled="true"
++41-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:37:13-35
++42            android:exported="true" >
++42-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:38:13-36
++43            <intent-filter>
++43-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:39:13-42:29
++44                <action android:name="android.intent.action.BOOT_COMPLETED" />
++44-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:40:17-79
++44-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:40:25-76
++45                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
++45-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:41:17-82
++45-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:41:25-79
++46            </intent-filter>
++47        </receiver>
++48
++49        <!-- Permission Receiver - Listens for permission changes (Android 12+) -->
++50        <receiver
++50-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:46:9-53:20
++51            android:name="com.nativealarms.PermissionReceiver"
++51-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:47:13-47
++52            android:enabled="true"
++52-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:48:13-35
++53            android:exported="false" >
++53-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:49:13-37
++54            <intent-filter>
++54-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:50:13-52:29
++55                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
++55-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:51:17-107
++55-->/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:51:25-104
++56            </intent-filter>
++57        </receiver>
++58    </application>
++59
++60</manifest>
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml b/node_modules/rn-native-alarmkit/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml
+new file mode 100644
+index 0000000..6691b67
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml
+@@ -0,0 +1,60 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.nativealarms" >
++
++    <uses-sdk android:minSdkVersion="24" />
++
++    <!-- Permissions -->
++    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
++    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
++    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
++    <uses-permission android:name="android.permission.WAKE_LOCK" />
++    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
++    <uses-permission android:name="android.permission.VIBRATE" />
++
++    <application>
++
++        <!-- Alarm Receiver - Handles alarm trigger events -->
++        <receiver
++            android:name="com.nativealarms.AlarmReceiver"
++            android:enabled="true"
++            android:exported="false" >
++            <intent-filter>
++                <action android:name="com.nativealarms.ALARM_ACTION" />
++            </intent-filter>
++        </receiver>
++
++        <!-- Alarm Action Receiver - Handles notification actions -->
++        <receiver
++            android:name="com.nativealarms.AlarmActionReceiver"
++            android:enabled="true"
++            android:exported="false" >
++            <intent-filter>
++                <action android:name="com.nativealarms.ACTION_DISMISS" />
++                <action android:name="com.nativealarms.ACTION_SNOOZE" />
++            </intent-filter>
++        </receiver>
++
++        <!-- Boot Receiver - Reschedules alarms after reboot -->
++        <receiver
++            android:name="com.nativealarms.BootReceiver"
++            android:enabled="true"
++            android:exported="true" >
++            <intent-filter>
++                <action android:name="android.intent.action.BOOT_COMPLETED" />
++                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
++            </intent-filter>
++        </receiver>
++
++        <!-- Permission Receiver - Listens for permission changes (Android 12+) -->
++        <receiver
++            android:name="com.nativealarms.PermissionReceiver"
++            android:enabled="true"
++            android:exported="false" >
++            <intent-filter>
++                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
++            </intent-filter>
++        </receiver>
++    </application>
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json b/node_modules/rn-native-alarmkit/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json
+new file mode 100644
+index 0000000..0637a08
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json
+@@ -0,0 +1 @@
++[]
+\ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt b/node_modules/rn-native-alarmkit/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+new file mode 100644
+index 0000000..08f4ebe
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+@@ -0,0 +1 @@
++0 Warning/Error
+\ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt b/node_modules/rn-native-alarmkit/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
+new file mode 100644
+index 0000000..93e6e0b
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
+@@ -0,0 +1 @@
++com.nativealarms
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/dirty-sources.txt b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/dirty-sources.txt
+new file mode 100644
+index 0000000..b2b74a3
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/dirty-sources.txt
+@@ -0,0 +1,8 @@
++/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/NotificationFallback.kt
++/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/BootReceiver.kt
++/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/ExactAlarmManager.kt
++/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/PermissionReceiver.kt
++/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmReceiver.kt
++/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/RNNativeAlarmsModule.kt
++/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmStorage.kt
++/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/RNNativeAlarmsPackage.kt
+\ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/local-state/build-history.bin b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/local-state/build-history.bin
+new file mode 100644
+index 0000000..dbc7595
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/local-state/build-history.bin differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/outputs/logs/manifest-merger-debug-report.txt b/node_modules/rn-native-alarmkit/android/build/outputs/logs/manifest-merger-debug-report.txt
+new file mode 100644
+index 0000000..757e1e0
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/outputs/logs/manifest-merger-debug-report.txt
+@@ -0,0 +1,106 @@
++-- Merging decision tree log ---
++manifest
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:2:1-55:12
++INJECTED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:2:1-55:12
++	package
++		INJECTED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml
++	xmlns:android
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:2:11-69
++uses-permission#android.permission.SCHEDULE_EXACT_ALARM
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:5:5-79
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:5:22-76
++uses-permission#android.permission.USE_EXACT_ALARM
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:6:5-74
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:6:22-71
++uses-permission#android.permission.POST_NOTIFICATIONS
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:7:5-77
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:7:22-74
++uses-permission#android.permission.WAKE_LOCK
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:8:5-68
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:8:22-65
++uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:9:5-81
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:9:22-78
++uses-permission#android.permission.VIBRATE
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:10:5-66
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:10:22-63
++application
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:12:5-54:19
++receiver#com.nativealarms.AlarmReceiver
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:14:9-21:20
++	android:enabled
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:16:13-35
++	android:exported
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:17:13-37
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:15:13-42
++intent-filter#action:name:com.nativealarms.ALARM_ACTION
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:18:13-20:29
++action#com.nativealarms.ALARM_ACTION
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:19:17-72
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:19:25-69
++receiver#com.nativealarms.AlarmActionReceiver
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:24:9-32:20
++	android:enabled
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:26:13-35
++	android:exported
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:27:13-37
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:25:13-48
++intent-filter#action:name:com.nativealarms.ACTION_DISMISS+action:name:com.nativealarms.ACTION_SNOOZE
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:28:13-31:29
++action#com.nativealarms.ACTION_DISMISS
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:29:17-74
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:29:25-71
++action#com.nativealarms.ACTION_SNOOZE
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:30:17-73
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:30:25-70
++receiver#com.nativealarms.BootReceiver
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:35:9-43:20
++	android:enabled
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:37:13-35
++	android:exported
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:38:13-36
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:36:13-41
++intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:39:13-42:29
++action#android.intent.action.BOOT_COMPLETED
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:40:17-79
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:40:25-76
++action#android.intent.action.QUICKBOOT_POWERON
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:41:17-82
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:41:25-79
++receiver#com.nativealarms.PermissionReceiver
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:46:9-53:20
++	android:enabled
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:48:13-35
++	android:exported
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:49:13-37
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:47:13-47
++intent-filter#action:name:android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:50:13-52:29
++action#android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED
++ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:51:17-107
++	android:name
++		ADDED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml:51:25-104
++uses-sdk
++INJECTED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
++INJECTED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml
++INJECTED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml
++	android:targetSdkVersion
++		INJECTED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml
++	android:minSdkVersion
++		INJECTED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml
+diff --git a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmStorage.kt b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmStorage.kt
+index 6ed0376..667de49 100644
+--- a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmStorage.kt
++++ b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmStorage.kt
+@@ -181,12 +181,18 @@ object AlarmStorage {
+                 com.facebook.react.bridge.ReadableType.Boolean -> json.put(array.getBoolean(i))
+                 com.facebook.react.bridge.ReadableType.Number -> json.put(array.getDouble(i))
+                 com.facebook.react.bridge.ReadableType.String -> json.put(array.getString(i))
+-                com.facebook.react.bridge.ReadableType.Map -> json.put(
+-                    readableMapToJson(array.getMap(i))
+-                )
+-                com.facebook.react.bridge.ReadableType.Array -> json.put(
+-                    readableArrayToJson(array.getArray(i))
+-                )
++                com.facebook.react.bridge.ReadableType.Map -> {
++                    val map = array.getMap(i)
++                    if (map != null) {
++                        json.put(readableMapToJson(map))
++                    }
++                }
++                com.facebook.react.bridge.ReadableType.Array -> {
++                    val nested = array.getArray(i)
++                    if (nested != null) {
++                        json.put(readableArrayToJson(nested))
++                    }
++                }
+             }
+         }
+ 
+diff --git a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/RNNativeAlarmsModule.kt b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/RNNativeAlarmsModule.kt
+index a9d7e0c..3c824ef 100644
+--- a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/RNNativeAlarmsModule.kt
++++ b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/RNNativeAlarmsModule.kt
+@@ -79,7 +79,7 @@ class RNNativeAlarmsModule(private val reactContext: ReactApplicationContext) :
+         scope.launch {
+             try {
+                 val capability = getCapabilityCheck()
+-                val capabilityType = capability["capability"] as? String ?: "notification"
++                val capabilityType = capability.getString("capability") ?: "notification"
+ 
+                 val scheduledAlarm: WritableMap = if (capabilityType == "native_alarms") {
+                     // Use exact alarms
+@@ -101,19 +101,8 @@ class RNNativeAlarmsModule(private val reactContext: ReactApplicationContext) :
+         scope.launch {
+             try {
+                 // Cancel existing
+-                cancelAlarm(alarmId, object : Promise {
+-                    override fun resolve(value: Any?) {}
+-                    override fun reject(code: String?, message: String?) {}
+-                    override fun reject(code: String?, throwable: Throwable?) {}
+-                    override fun reject(code: String?, message: String?, throwable: Throwable?) {}
+-                    override fun reject(throwable: Throwable?) {}
+-                    override fun reject(throwable: Throwable?, userInfo: WritableMap?) {}
+-                    override fun reject(code: String?, userInfo: WritableMap) {}
+-                    override fun reject(code: String?, throwable: Throwable?, userInfo: WritableMap?) {}
+-                    override fun reject(code: String?, message: String?, userInfo: WritableMap) {}
+-                    override fun reject(code: String?, message: String?, throwable: Throwable?, userInfo: WritableMap?) {}
+-                    override fun reject(message: String?) {}
+-                })
++                exactAlarmManager.cancelAlarm(alarmId)
++                notificationFallback.cancelAlarm(alarmId)
+ 
+                 // Schedule new with same ID
+                 val mutableSchedule = Arguments.createMap()

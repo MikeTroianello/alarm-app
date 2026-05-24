@@ -8,7 +8,11 @@
     "scheme": "alarmapp",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "infoPlist": {
+        "NSAlarmKitUsageDescription": "Alarm App needs permission to ring alarms at the exact times you set."
+      },
+      "bundleIdentifier": "com.miketroi.alarmapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +21,17 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.READ_MEDIA_AUDIO"
+      ],
+      "package": "com.miketroi.alarmapp"
     },
     "web": {
       "output": "static",
@@ -33,6 +47,36 @@
             "image": "./assets/images/splash-icon.png",
             "imageWidth": 76
           }
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      [
+        "react-native-permissions",
+        {
+          "iosPermissions": [
+            "Notifications",
+            "MediaLibrary"
+          ]
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "enableBackgroundPlayback": true,
+          "enableBackgroundRecording": false
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your audio files so you can choose an alarm sound.",
+          "savePhotosPermission": false,
+          "granularPermissions": [
+            "audio"
+          ],
+          "isAccessMediaLocationEnabled": false
         }
       ]
     ],
