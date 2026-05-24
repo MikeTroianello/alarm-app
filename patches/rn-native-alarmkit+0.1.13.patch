@@ -1,3 +1,25 @@
+diff --git a/node_modules/rn-native-alarmkit/android/build/.transforms/c446f9c2a6d4b4861cead8cae85c63de/results.bin b/node_modules/rn-native-alarmkit/android/build/.transforms/c446f9c2a6d4b4861cead8cae85c63de/results.bin
+new file mode 100644
+index 0000000..0d259dd
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/.transforms/c446f9c2a6d4b4861cead8cae85c63de/results.bin
+@@ -0,0 +1 @@
++o/classes
+diff --git a/node_modules/rn-native-alarmkit/android/build/.transforms/c446f9c2a6d4b4861cead8cae85c63de/transformed/classes/classes_dex/classes.dex b/node_modules/rn-native-alarmkit/android/build/.transforms/c446f9c2a6d4b4861cead8cae85c63de/transformed/classes/classes_dex/classes.dex
+new file mode 100644
+index 0000000..0bee41a
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/.transforms/c446f9c2a6d4b4861cead8cae85c63de/transformed/classes/classes_dex/classes.dex differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/.transforms/c5deeb86a99f2e5ea17c250082aa81e5/results.bin b/node_modules/rn-native-alarmkit/android/build/.transforms/c5deeb86a99f2e5ea17c250082aa81e5/results.bin
+new file mode 100644
+index 0000000..0d259dd
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/.transforms/c5deeb86a99f2e5ea17c250082aa81e5/results.bin
+@@ -0,0 +1 @@
++o/classes
+diff --git a/node_modules/rn-native-alarmkit/android/build/.transforms/c5deeb86a99f2e5ea17c250082aa81e5/transformed/classes/classes_dex/classes.dex b/node_modules/rn-native-alarmkit/android/build/.transforms/c5deeb86a99f2e5ea17c250082aa81e5/transformed/classes/classes_dex/classes.dex
+new file mode 100644
+index 0000000..8dc1f7e
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/.transforms/c5deeb86a99f2e5ea17c250082aa81e5/transformed/classes/classes_dex/classes.dex differ
 diff --git a/node_modules/rn-native-alarmkit/android/build/generated/source/buildConfig/debug/com/nativealarms/BuildConfig.java b/node_modules/rn-native-alarmkit/android/build/generated/source/buildConfig/debug/com/nativealarms/BuildConfig.java
 new file mode 100644
 index 0000000..9d75e02
@@ -126,6 +148,10 @@ index 0000000..9e26dfe
 @@ -0,0 +1 @@
 +{}
 \ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar b/node_modules/rn-native-alarmkit/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar
+new file mode 100644
+index 0000000..8c2dceb
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar differ
 diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar b/node_modules/rn-native-alarmkit/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar
 new file mode 100644
 index 0000000..8c3bd52
@@ -149,6 +175,41 @@ index 0000000..99bf03d
 +<?xml version="1.0" encoding="utf-8"?>
 +<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/build/generated/res/resValues/debug"/></dataSet><mergedItems/></merger>
 \ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/mergeDebugAssets/merger.xml b/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/mergeDebugAssets/merger.xml
+new file mode 100644
+index 0000000..a9adf1b
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/mergeDebugAssets/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/assets"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/debug/assets"/></dataSet><dataSet config="generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/build/intermediates/shader_assets/debug/compileDebugShaders/out"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml b/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+new file mode 100644
+index 0000000..b7d0527
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/debug/jniLibs"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/mergeDebugShaders/merger.xml b/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+new file mode 100644
+index 0000000..257d02f
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/debug/shaders"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/java_res/debug/processDebugJavaRes/out/META-INF/rn-native-alarmkit_debug.kotlin_module b/node_modules/rn-native-alarmkit/android/build/intermediates/java_res/debug/processDebugJavaRes/out/META-INF/rn-native-alarmkit_debug.kotlin_module
+new file mode 100644
+index 0000000..9dbc290
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/intermediates/java_res/debug/processDebugJavaRes/out/META-INF/rn-native-alarmkit_debug.kotlin_module differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/nativealarms/BuildConfig.class b/node_modules/rn-native-alarmkit/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/nativealarms/BuildConfig.class
+new file mode 100644
+index 0000000..a41434c
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/nativealarms/BuildConfig.class differ
 diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt b/node_modules/rn-native-alarmkit/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
 new file mode 100644
 index 0000000..78ac5b8
@@ -351,6 +412,10 @@ index 0000000..08f4ebe
 @@ -0,0 +1 @@
 +0 Warning/Error
 \ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar b/node_modules/rn-native-alarmkit/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar
+new file mode 100644
+index 0000000..f72d1fd
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar differ
 diff --git a/node_modules/rn-native-alarmkit/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt b/node_modules/rn-native-alarmkit/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
 new file mode 100644
 index 0000000..93e6e0b
@@ -358,24 +423,362 @@ index 0000000..93e6e0b
 +++ b/node_modules/rn-native-alarmkit/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
 @@ -0,0 +1 @@
 +com.nativealarms
-diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/dirty-sources.txt b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/dirty-sources.txt
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab
 new file mode 100644
-index 0000000..b2b74a3
+index 0000000..db70d17
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream
+new file mode 100644
+index 0000000..d7de7b8
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len
+new file mode 100644
+index 0000000..86da64f
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len
+new file mode 100644
+index 0000000..eb0b8a0
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at
+new file mode 100644
+index 0000000..4a107ce
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i
+new file mode 100644
+index 0000000..1cd4a76
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab
+new file mode 100644
+index 0000000..0ab0e86
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream
+new file mode 100644
+index 0000000..6490e5a
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len
+new file mode 100644
+index 0000000..0457fe0
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len
+new file mode 100644
+index 0000000..a363176
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at
+new file mode 100644
+index 0000000..70686e6
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i
+new file mode 100644
+index 0000000..2f7ee24
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab
+new file mode 100644
+index 0000000..30672c3
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream
+new file mode 100644
+index 0000000..6490e5a
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len
+new file mode 100644
+index 0000000..0457fe0
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len
+new file mode 100644
+index 0000000..a363176
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at
+new file mode 100644
+index 0000000..637e1d4
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i
+new file mode 100644
+index 0000000..2f7ee24
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab
+new file mode 100644
+index 0000000..6c7a7f6
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream
+new file mode 100644
+index 0000000..3297fd9
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream.len
+new file mode 100644
+index 0000000..30b8abe
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.len
+new file mode 100644
+index 0000000..2a17e6e
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.values.at b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.values.at
+new file mode 100644
+index 0000000..d102640
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.values.at differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i
+new file mode 100644
+index 0000000..4aa0c3d
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab
+new file mode 100644
+index 0000000..02f64d4
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream
+new file mode 100644
+index 0000000..98eaa16
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len
+new file mode 100644
+index 0000000..482bc14
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len
+new file mode 100644
+index 0000000..b31f54b
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at
+new file mode 100644
+index 0000000..957d7da
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i
+new file mode 100644
+index 0000000..8f45a7d
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab
+new file mode 100644
+index 0000000..e681f34
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream
+new file mode 100644
+index 0000000..eaca08a
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len
+new file mode 100644
+index 0000000..dcc66c6
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len
+new file mode 100644
+index 0000000..6f677df
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at
+new file mode 100644
+index 0000000..5a6e059
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i
+new file mode 100644
+index 0000000..a9bd6c9
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab
+new file mode 100644
+index 0000000..7c00b37
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream
+new file mode 100644
+index 0000000..d7de7b8
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len
+new file mode 100644
+index 0000000..86da64f
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len
+new file mode 100644
+index 0000000..eb0b8a0
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at
+new file mode 100644
+index 0000000..6372709
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i
+new file mode 100644
+index 0000000..1cd4a76
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab
+new file mode 100644
+index 0000000..a9c0301
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream
+new file mode 100644
+index 0000000..f506ab7
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len
+new file mode 100644
+index 0000000..0764b5d
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len
+new file mode 100644
+index 0000000..a9f80ae
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at
+new file mode 100644
+index 0000000..2406e57
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i
+new file mode 100644
+index 0000000..c2425c0
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab
+new file mode 100644
+index 0000000..780c464
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream
+new file mode 100644
+index 0000000..cd4b3d8
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len
+new file mode 100644
+index 0000000..68b143b
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len
+new file mode 100644
+index 0000000..9e27f73
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at
+new file mode 100644
+index 0000000..d52790d
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i
+new file mode 100644
+index 0000000..89481e9
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab
+new file mode 100644
+index 0000000..9153a30
 --- /dev/null
-+++ b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/dirty-sources.txt
-@@ -0,0 +1,8 @@
-+/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/NotificationFallback.kt
-+/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/BootReceiver.kt
-+/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/ExactAlarmManager.kt
-+/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/PermissionReceiver.kt
-+/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmReceiver.kt
-+/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/RNNativeAlarmsModule.kt
-+/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmStorage.kt
-+/Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/RNNativeAlarmsPackage.kt
++++ b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab
+@@ -0,0 +1,2 @@
++12
++0
 \ No newline at end of file
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab
+new file mode 100644
+index 0000000..a444246
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream
+new file mode 100644
+index 0000000..d7de7b8
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len
+new file mode 100644
+index 0000000..86da64f
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len
+new file mode 100644
+index 0000000..eb0b8a0
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at
+new file mode 100644
+index 0000000..09947d1
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i
+new file mode 100644
+index 0000000..1cd4a76
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab
+new file mode 100644
+index 0000000..076f77d
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream
+new file mode 100644
+index 0000000..82dcce2
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len
+new file mode 100644
+index 0000000..1ff194f
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len
+new file mode 100644
+index 0000000..a363176
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at
+new file mode 100644
+index 0000000..6bfd1ec
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i
+new file mode 100644
+index 0000000..8452381
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab
+new file mode 100644
+index 0000000..41a6c11
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream
+new file mode 100644
+index 0000000..d53bb21
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len
+new file mode 100644
+index 0000000..f93dc8a
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len
+new file mode 100644
+index 0000000..7acc452
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at
+new file mode 100644
+index 0000000..77c5674
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i
+new file mode 100644
+index 0000000..385305a
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i.len b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i.len differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/last-build.bin b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/last-build.bin
+new file mode 100644
+index 0000000..608f6bf
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/cacheable/last-build.bin differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin
+new file mode 100644
+index 0000000..f6559d1
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin differ
 diff --git a/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/local-state/build-history.bin b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/local-state/build-history.bin
 new file mode 100644
-index 0000000..dbc7595
+index 0000000..993b693
 Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/kotlin/compileDebugKotlin/local-state/build-history.bin differ
 diff --git a/node_modules/rn-native-alarmkit/android/build/outputs/logs/manifest-merger-debug-report.txt b/node_modules/rn-native-alarmkit/android/build/outputs/logs/manifest-merger-debug-report.txt
 new file mode 100644
@@ -489,6 +892,275 @@ index 0000000..757e1e0
 +		INJECTED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml
 +	android:minSdkVersion
 +		INJECTED from /Users/miketroianello/Desktop/alarm/alarm-app/node_modules/rn-native-alarmkit/android/src/main/AndroidManifest.xml
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin b/node_modules/rn-native-alarmkit/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin
+new file mode 100644
+index 0000000..a93ed87
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/META-INF/rn-native-alarmkit_debug.kotlin_module b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/META-INF/rn-native-alarmkit_debug.kotlin_module
+new file mode 100644
+index 0000000..9dbc290
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/META-INF/rn-native-alarmkit_debug.kotlin_module differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmActionReceiver.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmActionReceiver.class
+new file mode 100644
+index 0000000..4d7ac9d
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmActionReceiver.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmAudioPlayer.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmAudioPlayer.class
+new file mode 100644
+index 0000000..cbc1276
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmAudioPlayer.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmReceiver$Companion.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmReceiver$Companion.class
+new file mode 100644
+index 0000000..441c5e1
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmReceiver$Companion.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmReceiver.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmReceiver.class
+new file mode 100644
+index 0000000..d812d62
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmReceiver.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmStorage$AlarmData.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmStorage$AlarmData.class
+new file mode 100644
+index 0000000..6bb537e
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmStorage$AlarmData.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmStorage$WhenMappings.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmStorage$WhenMappings.class
+new file mode 100644
+index 0000000..1a712b1
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmStorage$WhenMappings.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmStorage.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmStorage.class
+new file mode 100644
+index 0000000..989f193
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/AlarmStorage.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/BootReceiver.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/BootReceiver.class
+new file mode 100644
+index 0000000..54ee98f
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/BootReceiver.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/ExactAlarmManager.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/ExactAlarmManager.class
+new file mode 100644
+index 0000000..db6bea7
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/ExactAlarmManager.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/NotificationFallback.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/NotificationFallback.class
+new file mode 100644
+index 0000000..a569367
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/NotificationFallback.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/PermissionReceiver.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/PermissionReceiver.class
+new file mode 100644
+index 0000000..9178377
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/PermissionReceiver.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$cancelAlarm$1.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$cancelAlarm$1.class
+new file mode 100644
+index 0000000..a1f5692
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$cancelAlarm$1.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$cancelAlarmsByCategory$1.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$cancelAlarmsByCategory$1.class
+new file mode 100644
+index 0000000..81080ca
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$cancelAlarmsByCategory$1.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$cancelAllAlarms$1.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$cancelAllAlarms$1.class
+new file mode 100644
+index 0000000..fdc0d77
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$cancelAllAlarms$1.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$getAlarm$1.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$getAlarm$1.class
+new file mode 100644
+index 0000000..d12934d
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$getAlarm$1.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$getAlarmsByCategory$1.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$getAlarmsByCategory$1.class
+new file mode 100644
+index 0000000..0b50040
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$getAlarmsByCategory$1.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$getAllAlarms$1.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$getAllAlarms$1.class
+new file mode 100644
+index 0000000..a618d07
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$getAllAlarms$1.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$scheduleAlarm$1.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$scheduleAlarm$1.class
+new file mode 100644
+index 0000000..acd014c
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$scheduleAlarm$1.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$snoozeAlarm$1.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$snoozeAlarm$1.class
+new file mode 100644
+index 0000000..6c11302
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$snoozeAlarm$1.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$updateAlarm$1.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$updateAlarm$1.class
+new file mode 100644
+index 0000000..384db7a
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule$updateAlarm$1.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule.class
+new file mode 100644
+index 0000000..f5883e1
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsModule.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsPackage.class b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsPackage.class
+new file mode 100644
+index 0000000..101d1a9
+Binary files /dev/null and b/node_modules/rn-native-alarmkit/android/build/tmp/kotlin-classes/debug/com/nativealarms/RNNativeAlarmsPackage.class differ
+diff --git a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmAudioPlayer.kt b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmAudioPlayer.kt
+new file mode 100644
+index 0000000..a7df1a1
+--- /dev/null
++++ b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmAudioPlayer.kt
+@@ -0,0 +1,44 @@
++package com.nativealarms
++
++import android.content.Context
++import android.media.AudioAttributes
++import android.media.MediaPlayer
++import android.net.Uri
++
++/**
++ * Plays the user-selected alarm audio URI (e.g. from MediaLibrary) when the alarm fires.
++ */
++object AlarmAudioPlayer {
++    private var mediaPlayer: MediaPlayer? = null
++
++    fun play(context: Context, uriString: String) {
++        stop()
++        try {
++            val player = MediaPlayer()
++            player.setAudioAttributes(
++                AudioAttributes.Builder()
++                    .setUsage(AudioAttributes.USAGE_ALARM)
++                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
++                    .build()
++            )
++            player.setDataSource(context.applicationContext, Uri.parse(uriString))
++            player.isLooping = true
++            player.prepare()
++            player.start()
++            mediaPlayer = player
++        } catch (e: Exception) {
++            e.printStackTrace()
++            stop()
++        }
++    }
++
++    fun stop() {
++        try {
++            mediaPlayer?.stop()
++            mediaPlayer?.release()
++        } catch (_: Exception) {
++        } finally {
++            mediaPlayer = null
++        }
++    }
++}
+diff --git a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmReceiver.kt b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmReceiver.kt
+index 8ddd4b9..3dc457c 100644
+--- a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmReceiver.kt
++++ b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmReceiver.kt
+@@ -19,7 +19,9 @@ class AlarmReceiver : BroadcastReceiver() {
+ 
+     companion object {
+         const val CHANNEL_ID = "native_alarms_channel"
++        const val CHANNEL_ID_SILENT = "native_alarms_silent_channel"
+         const val CHANNEL_NAME = "Alarms"
++        const val CHANNEL_NAME_SILENT = "Alarms (custom sound)"
+         const val ACTION_DISMISS = "com.nativealarms.ACTION_DISMISS"
+         const val ACTION_SNOOZE = "com.nativealarms.ACTION_SNOOZE"
+     }
+@@ -32,11 +34,17 @@ class AlarmReceiver : BroadcastReceiver() {
+         val scheduleType = intent.getStringExtra("scheduleType")
+         val isInexact = intent.getBooleanExtra("isInexact", false)
+ 
+-        // Create notification channel
+-        createNotificationChannel(context)
++        val songUri = resolveSongUri(context, alarmId)
+ 
+-        // Show notification
+-        showAlarmNotification(context, alarmId, title, body, sound)
++        if (songUri != null) {
++            AlarmAudioPlayer.play(context.applicationContext, songUri)
++        }
++
++        // Create notification channel (silent channel when custom track plays)
++        createNotificationChannel(context, songUri != null)
++
++        // Show notification (skip default sound when custom track is playing)
++        showAlarmNotification(context, alarmId, title, body, if (songUri != null) "none" else sound)
+ 
+         // Send event to React Native
+         sendAlarmFiredEvent(context, alarmId)
+@@ -47,17 +55,29 @@ class AlarmReceiver : BroadcastReceiver() {
+         }
+     }
+ 
+-    private fun createNotificationChannel(context: Context) {
++    private fun createNotificationChannel(context: Context, silent: Boolean) {
+         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
++            val notificationManager =
++                context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
++
+             val importance = NotificationManager.IMPORTANCE_HIGH
+             val channel = NotificationChannel(CHANNEL_ID, CHANNEL_NAME, importance).apply {
+                 description = "Alarm notifications"
+                 enableVibration(true)
+                 vibrationPattern = longArrayOf(0, 500, 250, 500)
+             }
+-
+-            val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+             notificationManager.createNotificationChannel(channel)
++
++            if (silent) {
++                val silentChannel =
++                    NotificationChannel(CHANNEL_ID_SILENT, CHANNEL_NAME_SILENT, importance).apply {
++                        description = "Alarm notifications without system sound"
++                        setSound(null, null)
++                        enableVibration(true)
++                        vibrationPattern = longArrayOf(0, 500, 250, 500)
++                    }
++                notificationManager.createNotificationChannel(silentChannel)
++            }
+         }
+     }
+ 
+@@ -108,8 +128,10 @@ class AlarmReceiver : BroadcastReceiver() {
+             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+         )
+ 
++        val channelId = if (sound == "none") CHANNEL_ID_SILENT else CHANNEL_ID
++
+         // Build notification
+-        val notificationBuilder = NotificationCompat.Builder(context, CHANNEL_ID)
++        val notificationBuilder = NotificationCompat.Builder(context, channelId)
+             .setSmallIcon(android.R.drawable.ic_lock_idle_alarm)
+             .setContentTitle(title)
+             .setContentIntent(pendingIntent)
+@@ -125,12 +147,13 @@ class AlarmReceiver : BroadcastReceiver() {
+                 .setStyle(NotificationCompat.BigTextStyle().bigText(body))
+         }
+ 
+-        // Sound
+-        if (sound != null && sound != "none") {
++        // Sound — "none" = custom track is playing via AlarmAudioPlayer; stay silent
++        if (sound == "none") {
++            notificationBuilder.setSilent(true)
++        } else if (sound != null) {
+             val soundUri = if (sound == "default") {
+                 RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM)
+             } else {
+-                // Custom sound from res/raw
+                 val soundResId = context.resources.getIdentifier(
+                     sound,
+                     "raw",
+@@ -198,6 +221,15 @@ class AlarmReceiver : BroadcastReceiver() {
+         }
+     }
+ 
++    private fun resolveSongUri(context: Context, alarmId: String): String? {
++        val alarmData = AlarmStorage.getAlarm(context, alarmId)
++            ?: AlarmStorage.getAlarm(context, "fallback_$alarmId")
++            ?: return null
++
++        val data = alarmData.config.getMap("data") ?: return null
++        return data.getString("songUri")
++    }
++
+     private fun getReactContext(context: Context): com.facebook.react.bridge.ReactApplicationContext? {
+         return try {
+             context.applicationContext as? com.facebook.react.bridge.ReactApplicationContext
+@@ -217,7 +249,7 @@ class AlarmActionReceiver : BroadcastReceiver() {
+ 
+         when (action) {
+             AlarmReceiver.ACTION_DISMISS -> {
+-                // Just dismiss the notification
++                AlarmAudioPlayer.stop()
+                 val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+                 notificationManager.cancel(alarmId.hashCode())
+             }
 diff --git a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmStorage.kt b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmStorage.kt
 index 6ed0376..667de49 100644
 --- a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/AlarmStorage.kt
@@ -517,6 +1189,30 @@ index 6ed0376..667de49 100644
 +                }
              }
          }
+ 
+diff --git a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/ExactAlarmManager.kt b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/ExactAlarmManager.kt
+index c06fb3e..923cce9 100644
+--- a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/ExactAlarmManager.kt
++++ b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/ExactAlarmManager.kt
+@@ -62,6 +62,7 @@ class ExactAlarmManager(private val context: Context) {
+      * Cancel alarm by ID
+      */
+     fun cancelAlarm(alarmId: String) {
++        AlarmAudioPlayer.stop()
+         val alarmData = AlarmStorage.getAlarm(context, alarmId)
+ 
+         if (alarmData != null) {
+diff --git a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/NotificationFallback.kt b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/NotificationFallback.kt
+index 7d8777a..2640c70 100644
+--- a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/NotificationFallback.kt
++++ b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/NotificationFallback.kt
+@@ -59,6 +59,7 @@ class NotificationFallback(private val context: Context) {
+      * Cancel alarm by ID
+      */
+     fun cancelAlarm(alarmId: String) {
++        AlarmAudioPlayer.stop()
+         val prefixedId = storagePrefix + alarmId
+         val alarmData = AlarmStorage.getAlarm(context, prefixedId)
  
 diff --git a/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/RNNativeAlarmsModule.kt b/node_modules/rn-native-alarmkit/android/src/main/java/com/nativealarms/RNNativeAlarmsModule.kt
 index a9d7e0c..3c824ef 100644
